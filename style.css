@@ -1,0 +1,332 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(assets/Gilroy-FREE/Gilroy-ExtraBold.otf)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+header {
+    height: 10vh;
+    width: calc(100% - 10vw);
+    margin: 0 auto;
+}
+
+span {
+    color:#4640DE;
+}
+
+.header-conteiner {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle-title {
+    padding: 10%;
+    height: 7.5vh;
+    width: 3.5vw;
+    border-radius: 50%;
+    border: 8px solid rgb(38, 38, 204);
+    filter: brightness(80%); 
+}
+
+.header-title {
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    font-size: max(14px, 2vw)
+}
+
+.header-list {
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-sign {
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sing-in-text {
+    color: #4640DE
+}
+
+.header-startup {
+    position: relative
+}
+.header-startup::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1.75vw;
+    height: 5vh;
+    width: 1px;
+    background-color: #000
+}
+
+main {
+    height: 450vh;
+    width: 100%;
+}
+
+.main-location-conteiner {
+    height: 100vh;
+    width: 100%;
+    background-color: #DCF0FB
+}
+.main-location-conteiner h1 {
+    font-family: Gilroy;
+}
+
+.main-box {
+    width: calc(100% - 20vw);
+    margin: 0 auto
+}
+
+.txt-image-box {
+    height: 55vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.txt-image-box h1 {
+    width: 45vw;
+    font-size: 4vw
+}
+.txt-image-box img {
+    width: 80%;
+    margin:  0 0 5vw 5vw
+}
+
+.input-conteiner {
+    height: 15vh;
+    width: 50vw; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
+input {
+    border-color: transparent transparent #000 transparent; 
+}
+button {
+    cursor: pointer;
+    height: 15vh;
+    width: 20vw;
+    color: #fff;
+    background-color: #4640DE;
+    border: none;
+}
+
+.input-box {
+    height: 15vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.input-box:hover {
+    border: 1px solid #000
+}
+
+.reference-text {
+    height: 25vh;
+    width: 47%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.companies-conteiner {
+    height: 30vh;
+    width: calc(100% - 20vw);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.companies-text {
+    width: 30%;
+}
+.companies-box  {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.companies-box img {
+    height: 6vh
+}
+
+.cards-conteiner {
+    height: 320vh;
+    width: 100%;
+    background-color: #F6F7FB;
+    background-image: url(assets/medplace-grafismo.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: left 4% top 15%;
+}
+.cards-conteiner h1 {
+    font-size: 3.2vw;
+    width: 24.9vw;
+}
+
+.conteiner-width {
+    width: calc(100% - 15vw);
+    margin: 0 auto;
+}
+
+.card-title {
+    height: 25vh;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cards-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-card {
+    padding: 1rem;
+    height: 27vh;
+    width: 14vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    font-weight: bolder;
+}
+.box-card img {
+    width: 15%
+}
+.box-card:hover {
+    background-color: #EF5253;
+    color: #fff;
+    font-weight: lighter;
+    cursor: pointer;
+    text-align: center;
+    background-image: url(assets/medplace-grafismo\ menor\ branco.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.span {
+    width: 17%;
+}
+
+.second-cards-box {
+    height: 60vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-text {
+    height: 30vh;
+    width: 43%;
+    display: flex;
+    justify-content: space-between;
+}
+.colored-text-service {
+    color: #4640DE;
+    cursor: pointer;
+}
+
+.marketing-card-conteiner, .marketing-card-conteiner-second {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.marketing-card-conteiner-second {
+    background-image: url(assets/medplace-grafismo.png);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: left 102% bottom;
+}
+
+.marketing-card {
+    padding: 1rem;
+    height: 50vh;
+    width: 26vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.marketing-card h2 {
+    width: 50%
+}
+
+.spaced-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.circle-card {
+    display: flex;
+    align-items: center;
+}
+
+.design-circle, .dev-circle, .marketing-circle, .business-circle {
+    height: 1.75vh;
+    width: 3.5%;
+    border-radius: 50%;
+    margin-right: 0.5vw
+}
+.design-circle {
+    background-color: #4640DE
+}
+.dev-circle {
+    background-color: #68EFE6
+}
+.marketing-circle {
+    background-color: #FCB403
+}
+.business-circle {
+    background-color: #CE6C59;
+}
+
+.local-card {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-day-card {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-day-card p {
+    opacity: 0.5
+}
+
+.companies-name {
+    display: flex;
+    align-items: center;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+}
